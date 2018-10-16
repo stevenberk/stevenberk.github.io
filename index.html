@@ -11,93 +11,81 @@
 </head>
 <style>
 
-body {
-   margin: 0px;
-   min-height: 100%;
-   width: 100%;
-
+html, body {
+   /* margin: 0px; */
+   /* height: 100%;
+   width: 100%; */
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
 }
 
 .flexContainer {
     display: flex;
     flex-direction: column;
-    font-family: avenir;
     align-items: center;
     justify-content: center;
-    
+    font-family: avenir;
+   
+    max-width: 600px;
 }
 
 .nameBox{
-    height: 75px;
-    width: 650px;
-    margin: 10px;
-    font-size: 4em;
+ 
+    font-size: 3em;
     font-weight: bold;
     text-align: center;
 }
 
-.experienceContainter {
-    display: flex;
-    width: 850px;
+
+.sectionHeader{
+    font-size: 2em;
+    width: 100%;
+    text-decoration: underline;
+    margin-bottom: .2em; 
 }
 
 p {
     text-align: center;
+
 }
 
-.experience {
-    width: 650px;
-    height: 325px;
-    background-color: aquamarine;
-    margin: 10px;
+table{
+    text-align: center;
+    width: 100%;
+  
 }
 
-.workIcon {
-    height: 120px;
-    width:  110px;
-    padding: 10px;
-    margin-right: 20px;
-}
-
-.educationContainer {
-    display: flex;
-    width: 850px;
-}
-
-.education {
-    width: 650px;
-    height: 200px;
-    background-color: aquamarine;
-    margin: 10px;
+.jobStats{
+    text-align: center;
     
 }
-.educationIcon {
-    height: 110px;
-    width:  130px;
-    padding: 10px;
-}
-
 
 .boxHeader {
     text-align: center;
-    margin-top: 1px;
     font-weight: bold;
+    font-size: 1.3em;
+    margin: 0;
 }
 
-.rightAlight {
-    text-align: right;
+
+
+.portfolioList{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+ 
 }
 
-.skills {
-    width: 650px;
-    height: 125px;
-    background-color: aquamarine;
-    margin: 10px;
-    
-}
-
-table {
+.widthfixer{
     width: 100%;
+}
+
+.colorstlye{
+    background-color: aquamarine;
+    width: 100%;
+    border-radius: 5px;
 }
 
 .fade {
@@ -117,154 +105,192 @@ table {
 </style>
 
 <body>
-<div class="flexContainer ">
+<div class="flexContainer fade">
     <div class="nameBox">
         Steven Berk
     </div>
-    <div class ="fade">
-            <p>
-            <a href="mailto:steven.e.berk@gmail.com">Email me</a> 
-            <br>
-            <a href="https://www.github.com/stevenberk">GitHub Profile</a> 
-            <br>
-            (678) 357 0741
-            </p>
-        </div>
-<div class="experienceContainter fade">
-<div class="workIcon">
-    <img src="/work.png">
-</div>
-    <div class="experience">
-        <p class="boxHeader">Experience<p>
-        <ul>
-            <li>
-                Property Manager - Self Employed <br>
-                Boston, MA <br> 
+    <div >
+        <p>
+        <a href="mailto:steven.e.berk@gmail.com">Email me</a> 
+        <br>
+        <a href="https://www.github.com/stevenberk">GitHub</a> 
+        <br>
+        (678) 357 0741
+        </p>
+    </div>
+
+
+
+<!-- work experience -->
+    <div>
+        <div class="colorstlye">  
+            <p class="sectionHeader">Experience</p>
+            <div class="jobStats">
+                <p class="boxHeader">
+                    Property Manager -  Self Employed
+                </p>
+                Boston, MA
+                <br>
                 January 2015 - May 2018
-                <br>
-                <ul>
-                    <li>
+            </div>    
+            <ul>
+                <li>
                     Maintained portfolio of short-term rentals in Boston for various owners
-                    </li>
-                    <li>
-                    Created and implemented a pricing scheme with self-collected data 
-                    </li>
-                    <li>
-                    Experienced year-to-year revenue growth despite increasing market saturation
-                    </li>
-                </ul>  
-            </li>
-            <li>
-                Shorelight Education - Admissions Assistant <br>
-                Boston, MA <br> 
-                January 2017 - December 2017
-                <ul>
-                    <li>
-                    Processed international applications for 12 US colleges and universities
-                    </li>
-                    <li>
-                    Upheld relationships with international recruiting agencies
-                    </li>
-                    <li>
-                    Calculated student metrics and maintained information in Salesforce
-                    </li>
-                </ul>  
-            </li>
-            
-        </ul>
-
-    </div>
-</div>
-<div class="educationContainer fade">
-    <div class="educationIcon">
-        <img src="/education.png">
-    </div>
-    <div class="education">
-        <p class="boxHeader">Education</p>
-
-        <ul>
-            <li>
-                Digital Crafts Immersive, June - October 2018
-                <br>
-                <ul>
-                    <li>
-                    Atlanta's top rated full stack developer bootcamp
-                    </li>
-                </ul>    
                 </li>
-            <li>
-                Northeastern University, Class of 2015
+                <li>
+                    Created and implemented a pricing scheme with self-collected data 
+                </li>
+                <li>
+                    Experienced year-to-year revenue growth despite increasing market saturation
+                </li>
+            </ul>
+            <div class="jobStats"> 
+                <p class="boxHeader">
+                Shorelight Education - Admissions Assistant
+                </p>  
+                Boston, MA 
                 <br>
-                <ul>
-                    <li>
-                    Bachelor of Arts - International Relations
-                    </li>
-                </ul>    
-            </li>
-            <li>
-                Georgia Perimeter College, Class of 2012
-                <br>
-                <ul>
-                    <li>
-                        Associate of Science - Psychology
-                    </li>
-                </ul>    
-            </li>
-        </ul>
+                January 2017 - December 2017
+            </div>         
+            <ul>
+                <li>
+                    Processed incoming international student college applications
+                </li>
+                <li>    
+                    Upheld relationships with international recruiting agencies 
+                </li>
+                <li>
+                    Calculated student metrics and maintained information in Salesforce
+                </li>
+            </ul>    
+        </div>
+    </div>
 
+<!-- portfolio -->
+    <div>
+        <div class="colorstlye">
+            <p class="sectionHeader">
+                Featured Projects
+            </p>
+            <ul class="portfolioList">
+            <li>
+                <div class="jobStats">
+                    <p class="boxHeader">
+                        Exact Change
+                    </p>
+                    <p>
+                    Full stack project. Peer-to-peer foreign currency exchange web app where users can create an account, login, buy and sell foreign banknotes with other users in their area without fees.
+                    </p>
+                    <a href="http://ec2-54-227-200-110.compute-1.amazonaws.com">Link to Exact Change</a> 
+                </div>
+            </li>
+            <br>
+            <li>
+                <div class="jobStats">
+                    <p class="boxHeader">
+                        MoviEATS
+                    </p>
+                    <p>
+                    Group Project. Web app that pairs a recipe based on a Film’s genre with using Spoonacular’s and OMDB’s API (API key no longer valid).
+                    </p>
+                    <a href="https://tracymusiker.github.io/">Link to MoviEATS</a> 
+                </div>
+            </li>
+            <br>
+            <li>
+                <div class="jobStats">
+                    <p class="boxHeader">
+                        Cat Snack Maze
+                    </p>
+                    <p>
+                    Pygame. Users navigate through a maze without touching the maze walls, hidden speed traps gradually increase the sensitivity of the arrow keys, making the game progressively harder.
+                    </p>
+                    <a href="https://github.com/stevenberk/pygame">Link to GitHub Repo</a>
+                </div>
+            </li>
+            </ul>
+        </div>
     </div>
-</div>
-<div class="educationContainer fade">
-    <div class="educationIcon">
-        <img src="/skills.png">
+
+
+<!-- skills -->
+    <div class="widthfixer">
+        <div class="colorstlye">
+            <p class="sectionHeader ">Skills</p>
+            <table class="colorstlye">
+                <tr>
+                    <td>
+                        JavaScript
+                    </td>
+                    <td>
+                        React.js
+                    </td>
+                    <td>
+                        Node.js 
+                    </td>
+                    <td>
+                        Python 2.7
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        PostgreSQL
+                    </td>
+                    <td>
+                        CSS/HTML5
+                    </td>
+                    <td>
+                        Bootstrap
+                    </td>
+                    <td>
+                        Responsive Design
+                    </td> 
+                </tr>
+                <tr>
+                    <td>
+                        Adobe Photoshop
+                    </td>
+                    <td>
+                        Adobe Premiere 
+                    </td>
+                    <td>
+                        GitHub
+                    </td>
+                    <td>    
+                        MS Office
+                    </td>
+                </tr>
+            </table>
+        </div>
     </div>
-    <div class="skills">
-        <p class="boxHeader">Skills</p>
-        <table >
-            <tr>
-                <td>
-                JavaScript
-                </td>
-                <td>
-                React.js
-                </td>
-                <td>
-                Node.js 
-                </td>
-                <td>
-                Python 2.7
-                </td>
-                <td>
-               PostgreSQL
-                </td>
-                <td>
-                CSS/HTML5
-                </td>
-            </tr>
-            <tr>
-                <td>
-                Bootstrap
-                </td>
-                <td>
-                Responsive Design
-                </td>
-                <td>
-                Adobe Photoshop
-                </td>
-                <td>
-                Adobe Premiere 
-                </td>
-                <td>
-                GitHub
-                </td>
-                <td>
-                MS Office
-                </td>
-                
-            </tr>
-        </table>
+
+
+
+<!-- education -->
+    <div class="widthfixer">
+        <div class="colorstlye">
+            <p class="sectionHeader">Education</p>
+            <div class="jobStats">
+                <p class="boxHeader">
+                Northeastern University
+                </p>
+                Bachelor of Art - International Affairs
+                <br>
+                Class of 2015
+            </div>
+            <br>
+            <div class="jobStats">
+                <p class="boxHeader">
+                Digital Crafts
+                </p>
+                Full Stack Developer Immersive Bootcamp
+                <br>
+                June 2018 - October 2018
+            </div>
+        </div>
     </div>
-</div>
+
+
 </div>
 </body>
 </html>
