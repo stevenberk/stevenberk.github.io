@@ -1,1 +1,274 @@
-Hello World
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Steven Berk</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--     <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
+<!-- <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet"> -->
+<!--     <script src="main.js"></script> -->
+</head>
+<style>
+
+body {
+   margin: 0px;
+   min-height: 100%;
+   width: 100%;
+
+}
+
+.flexContainer {
+    display: flex;
+    flex-direction: column;
+    font-family: avenir;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.nameBox{
+    height: 75px;
+    width: 650px;
+    margin: 10px;
+    font-size: 4em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.experienceContainter {
+    display: flex;
+    width: 850px;
+}
+
+p {
+    text-align: center;
+}
+
+.experience {
+    width: 650px;
+    height: 325px;
+    background-color: aquamarine;
+    margin: 10px;
+}
+
+.workIcon {
+    height: 120px;
+    width:  110px;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.educationContainer {
+    display: flex;
+    width: 850px;
+}
+
+.education {
+    width: 650px;
+    height: 200px;
+    background-color: aquamarine;
+    margin: 10px;
+    
+}
+.educationIcon {
+    height: 110px;
+    width:  130px;
+    padding: 10px;
+}
+
+
+.boxHeader {
+    text-align: center;
+    margin-top: 1px;
+    font-weight: bold;
+}
+
+.rightAlight {
+    text-align: right;
+}
+
+.skills {
+    width: 650px;
+    height: 100px;
+    background-color: aquamarine;
+    margin: 10px;
+    
+}
+
+table {
+    width: 100%;
+}
+
+.fade {
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+    animation: fadein 5s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+</style>
+
+<body>
+<div class="flexContainer ">
+    <div class="nameBox">
+        Steven Berk
+    </div>
+    <div class ="fade">
+            <p>
+            <a href="mailto:steven.e.berk@gmail.com">Email me</a> 
+            <br>
+            <a href="https://www.github.com/stevenberk">GitHub Profile</a> 
+            <br>
+            (678) 357 0741
+            </p>
+        </div>
+<div class="experienceContainter fade">
+<div class="workIcon">
+    <img src="work.png">
+</div>
+    <div class="experience">
+        <p class="boxHeader">Experience<p>
+        <ul>
+            <li>
+                Property Manager - Self Employed <br>
+                Boston, MA <br> 
+                January 2015 - May 2018
+                <br>
+                <ul>
+                    <li>
+                    Maintained portfolio of short-term rentals in Boston for various owners
+                    </li>
+                    <li>
+                    Created and implemented a pricing scheme with self-collected data 
+                    </li>
+                    <li>
+                    Experienced year-to-year revenue growth despite increasing market saturation
+                    </li>
+                </ul>  
+            </li>
+            <li>
+                Shorelight Education - Admissions Assistant <br>
+                Boston, MA <br> 
+                January 2017 - December 2017
+                <ul>
+                    <li>
+                    Processed international applications for 12 US colleges and universities
+                    </li>
+                    <li>
+                    Upheld relationships with international recruiting agencies
+                    </li>
+                    <li>
+                    Calculated student metrics and maintained information in Salesforce
+                    </li>
+                </ul>  
+            </li>
+            
+        </ul>
+
+    </div>
+</div>
+<div class="educationContainer fade">
+    <div class="educationIcon">
+        <img src="education.png">
+    </div>
+    <div class="education">
+        <p class="boxHeader">Education</p>
+
+        <ul>
+            <li>
+                Digital Crafts Immersive, June - October 2018
+                <br>
+                <ul>
+                    <li>
+                    Atlanta's top rated full stack developer bootcamp
+                    </li>
+                </ul>    
+                </li>
+            <li>
+                Northeastern University, Class of 2015
+                <br>
+                <ul>
+                    <li>
+                    Bachelor of Arts - International Relations
+                    </li>
+                </ul>    
+            </li>
+            <li>
+                Georgia Perimeter College, Class of 2012
+                <br>
+                <ul>
+                    <li>
+                        Associate of Science - Psychology
+                    </li>
+                </ul>    
+            </li>
+        </ul>
+
+    </div>
+</div>
+<div class="educationContainer fade">
+    <div class="educationIcon">
+        <img src="skills.png">
+    </div>
+    <div class="skills">
+        <p class="boxHeader">Skills</p>
+
+
+        <table >
+            <tr>
+                <td>
+                HTML5/CSS
+                </td>
+                <td>
+                Bootstrap
+                </td>
+                <td>
+                Responsive Design 
+                </td>
+                <td>
+                JavaScript
+                </td>
+                <td>
+                Python 2.7
+                </td>
+                <td>
+                    PostreSQL
+                </td>
+            </tr>
+            <tr>
+                <td>
+                React.js
+                </td>
+                <td>
+                Adobe Photoshop
+                </td>
+                <td>
+                Adobe Premiere 
+                </td>
+                <td>
+                GitHub
+                </td>
+                <td>
+                PostreSQL
+                </td>
+                <td>
+                    PostreSQL
+                </td>
+            </tr>
+        </table>
+
+    
+
+    </div>
+</div>
+</div>
+</body>
+</html>
